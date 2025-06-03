@@ -1,0 +1,33 @@
+.corpo-mensagens {
+    background-color: bisque;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.balao {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: max-content;
+    max-width: 300px;
+    margin-block: 6px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.balao h1 {
+    font-size: 1rem;
+    margin: 0px;
+}
+
+.balao h2 {
+    font-size: 12pt;
+    padding: 0px;
+    margin: 0px;
+    align-self: flex-end;
+}
+
+.balao.direita {
+    align-self: flex-end;
+}
