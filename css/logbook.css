@@ -6,6 +6,15 @@
     --border: 16px;
 }
 
+html {
+}
+
+body {
+    background: linear-gradient(#1B4965,#BEE9E8);
+    height: 600px;
+    background-size: auto 100% !important; 
+}
+
 .corpo-mensagens {
     background-color: bisque;
     padding: 10px;
