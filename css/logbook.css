@@ -1,57 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-size: 14pt;
     --border: 16px;
 }
 
 html {
+    height: 100vh;
 }
 
 body {
-    background: linear-gradient(#1B4965,#BEE9E8);
-    height: 600px;
-    background-size: auto 100% !important; 
+    background: #29BF12;
 }
 
 .corpo-mensagens {
-    background-color: bisque;
-    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ABFF4F;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    height: 98vh; /* Só assim pra não aparecer uma scrollbar lá embaixo */
+    overflow: auto;
+    box-shadow: 0px 0px 8px;
 }
 
 .balao {
-    font-weight: light;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
-    width: max-content;
-    max-width: 300px;
+    width: fit-content;
+    max-width: min(100%, 600px);
     margin-block: 6px;
     padding: 8px;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
 }
 
+
 .balao.direita {
+    color: #fff4f6;
+    background-color: #F21B3F;
     align-self: flex-end;
     border-radius: var(--border) var(--border) 0px var(--border); /* Puxadinho pra parecer o rabinho à direita do balão */
 }
 
 .balao.esquerda {
+    background-color: #08BDBD;
     border-radius: var(--border) var(--border) var(--border) 0px;  /* Puxadinho pra parecer o rabinho à esquerda do balão */
 }
 
 /* Texto principal dentro de um balão de fala */
 .balao h1 {
+    font-weight: 500;
     font-size: 1rem;
     margin: 0px;
 }
 
+.balao h1 span{
+    font-family: monospace;
+    background-color: rgba(0, 0, 0, .25);
+    border-radius: 4px;
+    padding-inline: 4px;
+}
+
 /* Horário de envio dos balões */
 .balao h2 {
+    color: rgba(0, 0, 0, .6);
     font-size: .75rem;
     font-style: italic;
     padding: 0px;
