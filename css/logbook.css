@@ -7,6 +7,8 @@
     --foreground-color: #abff4f;
     --color-1: #08BDBD;
     --color-2: #F21B3F;
+    --shadow-parameters: 2px 2px 6px rgba(0, 0, 0, .75);
+    --separador-dia: 24px;
 }
 
 html {
@@ -20,12 +22,24 @@ body {
 .corpo-mensagens {
     box-sizing: border-box;
     background-color: var(--foreground-color);
-    padding: 20px;
+    padding: 0px 20px 20px 20px; /* padding-top menor pra não somar com o padding do caixa-data */
     display: flex;
     flex-direction: column;
     height: 98vh; /* Só assim pra não aparecer uma scrollbar lá embaixo */
     overflow: auto;
     box-shadow: 0px 0px 8px;
+}
+
+.caixa-data {
+    font-size: .75rem;
+    background-color: var(--background-color);
+    align-self: center;
+    margin-top: var(--separador-dia);
+    margin-bottom: calc(var(--separador-dia) / 3); /* Margem de baixo sempre será um terço da margem de cima */
+    padding: 6px;
+    padding-inline: 12px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-parameters);
 }
 
 .balao {
@@ -36,7 +50,7 @@ body {
     margin-block: 6px;
     padding: 8px;
     border-radius: 10px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+    box-shadow: var(--shadow-parameters);
 }
 
 
@@ -78,7 +92,6 @@ body {
     display: inline-flex;
 }
 
-
 .balao.esquerda h2 {
     align-self: flex-end;
 }
@@ -94,4 +107,8 @@ body {
     width: 1.5em;
     height: 1em;
     margin-inline: 4px;
+}
+
+.separador {
+    background-color: aquamarine;
 }
