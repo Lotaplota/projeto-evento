@@ -5,3 +5,8 @@
 body {
     background: url("../img/chita-background.png");
 }
+
+nav a {
+    --bs-breadcrumb-divider: " ↣ ";
+    --bs-breadcrumb-divider-color: #0d6efd;
+}
