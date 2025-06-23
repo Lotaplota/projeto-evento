@@ -11,6 +11,10 @@ nav a {
     --bs-breadcrumb-divider-color: #0d6efd;
 }
 
+.boas-vindas {
+    height: 400px;
+}
+
 .banner-md {
   width: 100%;
   height: 200px;
@@ -18,10 +22,19 @@ nav a {
   object-position: center top;
 }
 
+.carousel-indicators button {
+    height: 16px !important;
+    width: 16px !important;
+    background-color: #0d6efd;
+}
+.text-shadow-subtle {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
 @media (min-width: 768px) {
   .banner-md {
     object-fit: cover;
-    height: 400px;
+    height: 100%;
     width: 200px;
     object-position: center center; /* Horizontal section */
   }

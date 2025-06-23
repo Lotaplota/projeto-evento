@@ -17,7 +17,7 @@
     <nav class="d-block navbar bg-primary navbar-expand-sm pt-3 pb-0 sticky-top">
         <div class="container">
             <a href="index.html" class="navbar-brand d-flex align-items-center">
-                <div class="border border-2 border-dark rounded-3 justify-content-center align-items-center px-2">
+                <div class="borderrder-dark fs-2 rounded-3 justify-content-center align-items-center px-2">
                     <i class="bi-badge-4k-fill fs-1"></i>
                 </div>
             </a>
@@ -62,11 +62,50 @@
     <div class="container p-5 bg-light">
 
         <!-- Banner de boas-vindas -->
-        <div class="d-md-block">
+        <div class="d-md-block mb-4 boas-vindas">
             <img src="img/bandeirinhas.png" alt="" class="float-start banner-md me-4">
             <div>
                 <h1 class="display-1 text-center mb-4">Bem vindo ao <em>Arraiá 4K!</em></h1>
-                <h2>Aproveite o melhor de culinária, música, e brincadeiras que o centro-oeste pode oferecer com um toque digital único.</h2>
+                <h2 class="fw-light">Aproveite o melhor de culinária, música, e brincadeiras que o centro-oeste pode oferecer com um toque digital único.</h2>
+            </div>
+        </div>
+        <div class="w-100"></div> <!-- Classe vazia para evitar overlap -->
+
+        <!-- Seção atrações -->
+        <div class="container py-5">
+            <h1 class="display-4 text-center">Visite as Nossas Barraquinhas Tecnológicas</h1>
+
+            <!-- Carrossel de atrações -->
+            <div class="carousel slide" id="carrossel-atracoes" data-bs-ride="carousel">
+                <!-- Indicadores do carrosel -->
+                <div class="carousel-indicators">
+                    <button class="bg-primary border border-light rounded-2 fs-2 active" data-bs-target="#carrossel-atracoes" data-bs-slide-to="0"></button>
+                    <button class="bg-warning border border-light rounded-2 fs-2" data-bs-target="#carrossel-atracoes" data-bs-slide-to="1"></button>
+                    <button class="bg-success border border-light rounded-2 fs-2" data-bs-target="#carrossel-atracoes" data-bs-slide-to="2"></button>
+                    <button class="bg-danger border border-light rounded-2 fs-2" data-bs-target="#carrossel-atracoes" data-bs-slide-to="3"></button>
+                </div>
+
+                <!-- Conteúdo do carrossel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="40000"> <!-- REMOVE interval -->
+                        <img src="img/slide1.png" alt="" class="d-block w-100">
+                        <div class="carousel-caption text-center text-md-start bottom-0 w-100 px-4 p-0 mb-5 position-absolute start-0">
+                            <a href="atracoes.html" class="text-decoration-none text-light text-shadow-subtle">
+                                <h1>Nossas Barraquinhas</h1>
+                                <p class="lead fs-2 d-none d-md-block">Texto sobre nossas barraquinhas</p> <!-- TODO -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative">
+                        <img src="img/slide2.png" alt="" class="">
+                    </div>
+                    <div class="carousel-item position-relative">
+                        <img src="img/slide3.png" alt="" class="">
+                    </div>
+                    <div class="carousel-item position-relative">
+                        <img src="img/slide4.png" alt="" class="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
