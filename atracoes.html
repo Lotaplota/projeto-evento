@@ -64,27 +64,54 @@
 
         <div class="px-3">
              <!-- Menu navegação -->
-             <nav class="nav nav-pills nav-fill px-3">
-             <button data-bs-target="#colFogueira" data-bs-toggle="collapse" class="nav-link active" href="">Fogueira Holográfica</button>
-                <button data-bs-target="#colCorreio" data-bs-toggle="collapse" class="nav-link" href="">Correio Elegante Pneumático</button>
-                <button data-bs-target="#colEspetinho" data-bs-toggle="collapse" class="nav-link" href="">Impressora de Espetinho</button>
-                <button class="nav-link disabled">A Jacaretinga Robô</button>
+            <nav class="nav nav-pills nav-fill px-3">
+                <button data-bs-target="#colFogueira" data-bs-toggle="collapse" class="nav-link active" href="" aria-expanded="false">Fogueira Holográfica</button>
+                <button data-bs-target="#colCorreio" data-bs-toggle="collapse" class="nav-link" href="" aria-expanded="false">Correio Elegante Pneumático</button>
+                <button data-bs-target="#colEspetinho" data-bs-toggle="collapse" class="nav-link" href="" aria-expanded="false">Impressora de Espetinho</button>
+                <button class="nav-link disabled">A Jacaretinga Robô</button> <!-- 🤭 -->
             </nav>
 
-            <!-- Descrição da atração 1 -->
-            <div id="colFogueira">
-                <img src="https://rect.svg" alt="">
-                <p>cdfgsdfgsd</p>
+            <!-- Cards das atrações -->
+            <div id="grupoCollapse"> <!-- TODO: preencher os campos de subtítulo e texto. Alguns já estão bons, mas podem melhorar. -->
+                <!-- Card da atração 1 -->
+                <div id="colFogueira" class="collapse show" data-bs-parent="#grupoCollapse">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/1200/400" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Fogueira Holográfica</h4>
+                            <h6 class="card-subtitle">Subtítulo</h6>
+                            <p class="card-text">Texto</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card da atração 2 -->
+                <div id="colCorreio" class="collapse" data-bs-parent="#grupoCollapse">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/1200/400" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Correio Elegante Pneumático</h4>
+                            <h6 class="card-subtitle">Sua privacidade está garantida. Juro procê!</h6>
+                            <p class="card-text">Texto</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card da atração 3 -->
+                <div id="colEspetinho" class="collapse" data-bs-parent="#grupoCollapse">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/1200/400" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Impressora de Espetinho</h4>
+                            <h6 class="card-subtitle">Feita com carne 100% sintética!</h6>
+                            <p class="card-text">Alguma piada sobre o espetiho ser completamente impresso, até a madeira, aí falar que a madeira foi impressa pela mãe natureza</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <!-- Descrição da atração 2 -->
-            <div id="colCorreio">collapse 2</div>
-
-            <!-- Descrição da atração 3 -->
-            <div id="colEspetinho">collapse 3</div>
-         </div>
-
-        
+        <div>Falar características do evento</div>
     </div>
 
 </body>
