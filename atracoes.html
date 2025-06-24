@@ -17,7 +17,7 @@
     <nav class="d-block navbar bg-primary navbar-expand-sm pt-3 pb-0 sticky-top">
         <div class="container">
             <a href="index.html" class="navbar-brand d-flex align-items-center">
-                <div class="border border-dark fs-2 rounded-3 justify-content-center align-items-center px-2">
+                <div class="border border-dark border-2 fs-2 rounded-3 justify-content-center align-items-center px-2">
                     <i class="bi-badge-4k-fill fs-1"></i>
                 </div>
             </a>
@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse" id="menuNavbar">
                 <div class="navbar-nav ms-auto text-center">
                     <div class="dropdown">
-                        <a href="" data-bs-toggle="dropdown" class="nav-link dropdown-toggle mx-3 fw-bold">Atrações</a>
+                        <a data-bs-toggle="dropdown" class="nav-link dropdown-toggle mx-3 fw-bold">Atrações</a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
                                 <a href="#" class="dropdown-item">Fogueira Holográfica</a>
@@ -46,7 +46,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="" class="nav-link active">Quero Ajudar!</a>
+                    <a href="formulario.html" class="nav-link active">Quero Ajudar!</a>
                 </div>
             </div>
         </div>
@@ -58,6 +58,34 @@
         </nav>
     </nav>
 
+    <!-- Conteúdo do corpo -->
+    <div class="container p-0 bg-light bg-opacity-75">
+        <div class="display-2 text-center">Nossas Atrações</div>
+
+        <div class="px-3">
+             <!-- Menu navegação -->
+             <nav class="nav nav-pills nav-fill px-3">
+             <button data-bs-target="#colFogueira" data-bs-toggle="collapse" class="nav-link active" href="">Fogueira Holográfica</button>
+                <button data-bs-target="#colCorreio" data-bs-toggle="collapse" class="nav-link" href="">Correio Elegante Pneumático</button>
+                <button data-bs-target="#colEspetinho" data-bs-toggle="collapse" class="nav-link" href="">Impressora de Espetinho</button>
+                <button class="nav-link disabled">A Jacaretinga Robô</button>
+            </nav>
+
+            <!-- Descrição da atração 1 -->
+            <div id="colFogueira">
+                <img src="https://rect.svg" alt="">
+                <p>cdfgsdfgsd</p>
+            </div>
+
+            <!-- Descrição da atração 2 -->
+            <div id="colCorreio">collapse 2</div>
+
+            <!-- Descrição da atração 3 -->
+            <div id="colEspetinho">collapse 3</div>
+         </div>
+
+        
+    </div>
 
 </body>
 </html>
