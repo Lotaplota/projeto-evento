@@ -60,17 +60,19 @@
     </nav>
 
     <!-- Conteúdo da página -->
-    <div class="container p-0 bg-light bg-opacity-75">
+    <div class="container-md p-0 bg-light bg-opacity-75 formulario">
         <div class="display-2 text-center">Quero Ajudar!</div>
         <div class="lead text-center">Quer ajudar na nossa festa? Preencha o seguinte formulário e simbora!</div>
 
         <div class="row mx-3 g-3">
-            <div class="col-12">
+            <!-- Input nome -->
+            <div class="col-12 col-md-6">
                 <label for="nome" class="form-label">Nome</label>
                 <input type="text" class="form-control" id="nome" placeholder="Insira o seu nome completo">
             </div>
 
-            <div class="col-6" id="grupoEmail">
+            <!-- Input e-mail -->
+            <div class="col-6 col-md-6" id="grupoEmail">
                 <label for="usuarioEmail" class="form-label">Email</label>
                 <div class="input-group">
                     <input type="text" class="form-control text-end" name="" id="usuarioEmail" placeholder="fulano_de_tal">
@@ -79,7 +81,8 @@
                 </div>
             </div>
 
-            <div class="col-6">
+            <!-- Input animação -->
+            <div class="col-6 col-md-6" id="grupoAnimacao">
                 <label for="" class="form-label">Nível de Animação</label>
                 <div class="btn-group w-100" role="group">
                     <input type="radio" name="nivelAnimacao" id="btn1" class="btn-check">
@@ -95,7 +98,8 @@
                 </div>
             </div>
 
-            <div class="col-5">
+            <!-- Input minha prenda -->
+            <div class="col-4 col-md-6" id="grupoPrenda">
                 <div class="d-flex">
                     <label for="prenda" class="form-label">Minha prenda Tecnológica</label>
                     <div type="button" class="ms-1" data-bs-trigger="hover" data-bs-toggle="popover" data-bs-html="true" data-bs-content="Sua prenda seria qualquer objeto que você que possa trazer que esteja dentro do tema, desde uma <em>fogueira</em> até uma <em>sanfona</em>😉"><i class="bi-info-circle-fill"></i></div>
@@ -106,7 +110,8 @@
                 </div>
             </div>
 
-            <div class="col-7">
+            <!-- Input disponibilidade -->
+            <div class="col-8 col-md-6" id="grupoDisp">
                 <div class="form-label">Disponibilidade</div>
                 <div class="btn-group" id="dfasd">
                     <input type="checkbox" id="btnDisp1" class="btn-check">
@@ -116,6 +121,11 @@
                     <input type="checkbox" id="btnDisp3" class="btn-check">
                     <label for="btnDisp3" class="btn btn-outline-success">Desmonte</label>
                 </div>
+            </div>
+
+            <!-- Input enviar -->
+            <div class="col-12 col-md-6">
+                <button type="submit" class="btn btn-primary h-100 w-100">sdfs</button>
             </div>
         </div>
     </div>
