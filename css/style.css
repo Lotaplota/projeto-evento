@@ -1,8 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Henny+Penny&family=Jolly+Lodger&display=swap');
 
 :root {
-  --marrom: rgb(85, 42, 21);
-  --marrom-suave: rgb(180, 136, 69);
+  --marrom: #552a15;
+  --marrom-suave: #b48845;
+  --bege-claro: #f5f5dc;
+  --amarelo: #fecb2f;
+}
+
+#barraNavegação {
+  background-color: var(--marrom) !important;
+}
+
+.marrom {
+  color: var(--marrom) !important;
+}
+
+.fundo-marrom {
+  background-color: var(--marrom) !important;
+}
+
+.bege {
+  color: var(--bege-claro) !important;
+}
+
+.fundo-bege {
+  background-color: var(--bege-claro) !important;
+}
+
+.amarelo {
+  color: var(--amarelo);
+}
+
+.fundo-amarelo {
+  background-color: var(--amarelo) !important;
 }
 
 .display-1, .display-2, .display-3, .display-4 {
@@ -21,7 +51,7 @@ body {
 
 nav a {
     --bs-breadcrumb-divider: " ↣ ";
-    --bs-breadcrumb-divider-color: #0d6efd;
+    --bs-breadcrumb-divider-color: var(--marrom);
 }
 
 .boas-vindas {
@@ -81,5 +111,4 @@ nav a {
 #botaoEnviarFormulario {
   font-family: "Henny Penny";
   border: 2px dashed var(--marrom-suave);
-  background-color: var(--marrom);
 }

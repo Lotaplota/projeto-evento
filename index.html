@@ -12,52 +12,21 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="scripts/contador.js" defer></script>
+    <script src="scripts/global.js"></script>
 </head>
 
 <body>
     <!-- Barra de navegação -->
-    <nav class="d-block navbar bg-primary navbar-expand-sm pt-3 pb-0 sticky-top">
-        <div class="container">
-            <a href="index.html" class="navbar-brand d-flex align-items-center">
-                <div class="border border-dark border-2 fs-2 rounded-3 justify-content-center align-items-center px-2">
-                    <i class="bi-badge-4k-fill fs-1"></i>
-                </div>
-                <h2 class="ms-2">Menu Principal</h2>
-            </a>
-
-            <!-- Botão collapse -->
-            <button type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" class="navbar-toggler">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Collapse da barra de navegação -->
-            <div class="collapse navbar-collapse" id="menuNavbar">
-                <div class="navbar-nav ms-auto text-center">
-                    <div class="dropdown">
-                        <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle mx-3 fw-bold">Atrações</a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li>
-                                <a href="#" class="dropdown-item">Fogueira Holográfica</a>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown-item">Atração 2</a>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown-item">Atração 3</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="formulario.html" class="nav-link active">Quero Ajudar!</a>
-                </div>
-            </div>
+    <nav id="barraNavegação" class="d-block navbar navbar-expand-sm pb-0 sticky-top">
+        <div id="placeholder-cabecalho" class="container">
         </div>
         
         <!-- Breadcrumbs -->
-        <nav class="breadcrumb mb-0 text-primary bg-dark w-100">
+        <nav class="breadcrumb mb-0 text-primary fundo-bege w-100">
             <div class="w-100">
                 <div class="borda-colorida"></div>
                 <div class="d-flex">
-                    <a href="index.html" class="breadcrumb-item text-primary text-decoration-none px-1 fs-5 fw-bold">O Terreiro Virtual</a>
+                    <a href="index.html" class="breadcrumb-item marrom text-decoration-none px-1 fs-5 fw-bold">O Terreiro Virtual</a>
                 </div>
             </div>
         </nav>

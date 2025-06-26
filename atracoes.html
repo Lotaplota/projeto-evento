@@ -10,54 +10,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="scripts/global.js"></script>
 </head>
 
 <body class="d-flex flex-column h-100">
     <!-- Barra de navegação -->
-    <nav class="d-block navbar bg-primary navbar-expand-sm pt-3 pb-0 sticky-top">
-        <div class="container">
-            <a href="index.html" class="navbar-brand d-flex align-items-center">
-                <div class="border border-dark border-2 fs-2 rounded-3 justify-content-center align-items-center px-2">
-                    <i class="bi-badge-4k-fill fs-1"></i>
-                </div>
-            </a>
-            <div class="ms-2">
-                <h2>Menu Principal</h2>
-                
-            </div>
-            <button type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" class="navbar-toggler">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Collapse da barra de navegação -->
-            <div class="collapse navbar-collapse" id="menuNavbar">
-                <div class="navbar-nav ms-auto text-center">
-                    <div class="dropdown">
-                        <a data-bs-toggle="dropdown" class="nav-link dropdown-toggle mx-3 fw-bold">Atrações</a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li>
-                                <a href="#" class="dropdown-item">Fogueira Holográfica</a>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown-item">Correio Elegante Pneumático</a>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown-item">Espetinho de Carne Sintética</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="formulario.html" class="nav-link active">Quero Ajudar!</a>
-                </div>
-            </div>
+    <nav id="barraNavegação" class="d-block navbar navbar-expand-sm pb-0 sticky-top">
+        <div id="placeholder-cabecalho" class="container">
         </div>
 
         <!-- Breadcrumbs -->
-        <nav class="breadcrumb mb-0 text-primary bg-dark w-100">
+        <nav class="breadcrumb mb-0 text-primary fundo-bege w-100">
             <div class="w-100">
                 <div class="borda-colorida"></div>
                 <div class="d-flex">
-                    <a href="index.html" class="breadcrumb-item text-primary text-decoration-none px-1 fs-5 fw-bold">O Terreiro Virtual</a>
-                    <a href="#" class="breadcrumb-item text-primary text-decoration-none px-1 fs-5 fw-bold">Atrações</a>
+                    <a href="index.html" class="breadcrumb-item marrom text-decoration-none px-1 fs-5 fw-bold">O Terreiro Virtual</a>
+                    <a href="#" class="breadcrumb-item marrom text-decoration-none px-1 fs-5 fw-bold">Atrações</a>
                 </div>
             </div>
         </nav>
@@ -84,7 +53,7 @@
                         <img class="card-img-top" src="img/1200x400.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title">Fogueira Holográfica</h4>
-                            <h6 class="card-subtitle">A fogueira que esquenta, mas não queima</h6>
+                            <h6 class="card-subtitle pt-0 mb-2">A fogueira que esquenta, mas não queima</h6>
                             <p class="card-text">Venha conhecer uma das atraçãoes mais importante dessa festa junina de pura tecnologia e comida boa.</p>
                         </div>
                     </div>
@@ -96,7 +65,7 @@
                         <img class="card-img-top" src="img/1200x400.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title">Correio Elegante Pneumático</h4>
-                            <h6 class="card-subtitle">Sua privacidade está garantida. Juro procê!</h6>
+                            <h6 class="card-subtitle pt-0 mb-2">Sua privacidade está garantida. Juro procê!</h6>
                             <p class="card-text">Mande aqui aquela mensagem para aquele cumpadi que ocê tá gostando, sem ele saber. Mar fica de ôio nas notificações do teu celulá pra vê si num tem ninhuma cartinha sua isperanu não!</p>
                         </div>
                     </div>
@@ -107,10 +76,10 @@
                     <div class="card">
                         <img class="card-img-top" src="img/1200x400.png" alt="">
                         <div class="card-body">
-                            <h4 class="card-title">Impressora de Espetinho</h4>
-                            <h6 class="card-subtitle">Feita com carne 100% sintética!</h6>
+                            <h4 class="card-title">Espetinho Sintético</h4>
+                            <h6 class="card-subtitle pt-0 mb-2">Feito com carne 100% sintética. Sem abuso animal.</h6>
                             <p class="card-text">Cumpadis! Se ocês vieram no arraiá do 4k não podem perde 
-                                o nosso espetinho é 100% tecnológico, feito em uma impressora de última geração. 
+                                o nosso espetinho é feito com materiais 100% sintéticos, impressos bem aqui mêmo na nossa impressora de úrtima geração. Até a madeira é impressa! Mai vô tê que confessá qui quem imprimiu ela foi uma árvore bem aqui do terreiro :D
                             </p>
                         </div>
                     </div>
