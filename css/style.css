@@ -40,7 +40,12 @@ nav a {
   }
 }
 
+.btn {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+}
+
 .formulario {
   max-width: 800px !important;
   height: 100vh;
+  background-color: bisque;
 }
