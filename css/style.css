@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Henny+Penny&family=Jolly+Lodger&display=swap');
+
 :root {
   --marrom: rgb(85, 42, 21);
   --marrom-suave: rgb(180, 136, 69);
+}
+
+.display-1, .display-2, .display-3, .display-4 {
+  margin-top: 2rem;
+  font-family: "Henny Penny";
+}
+
+.lead, h1, h2, h3, h4 {
+  font-family: "Freckle Face", system-ui;
+  font-size: 20pt;
 }
 
 body {
@@ -67,6 +79,7 @@ nav a {
 }
 
 #botaoEnviarFormulario {
+  font-family: "Henny Penny";
   border: 2px dashed var(--marrom-suave);
   background-color: var(--marrom);
 }
