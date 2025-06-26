@@ -49,3 +49,18 @@ nav a {
   height: 100vh;
   background-color: bisque;
 }
+
+.borda-colorida {
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--bs-blue) 0 15px,
+    transparent 15px 30px,
+    var(--bs-yellow) 30px 45px,
+    transparent 45px 60px,
+    var(--bs-red) 60px 75px,
+    transparent 75px 90px,
+    var(--bs-green) 90px 105px,
+    transparent 105px 120px
+  );
+  height: .4rem;
+}
