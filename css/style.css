@@ -7,6 +7,10 @@
   --amarelo: #fecb2f;
 }
 
+.logo4K {
+  height: 80px;
+}
+
 #barraNavegação {
   background-color: var(--marrom) !important;
 }
