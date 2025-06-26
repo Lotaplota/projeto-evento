@@ -58,6 +58,21 @@ nav a {
     --bs-breadcrumb-divider-color: var(--marrom);
 }
 
+iframe {
+  border: 4px dashed var(--marrom) !important;
+}
+
+td, th, tr
+{
+  background-color: transparent !important;
+}
+
+#doisPontos {
+  padding-inline: 0px;
+  text-align: center;
+  max-width: 20px;
+}
+
 .boas-vindas {
     height: 400px;
 }
@@ -97,7 +112,7 @@ nav a {
   background-color: var(--marrom-suave);
 }
 
-.borda-colorida {
+.divisor-colorido {
   background-image: repeating-linear-gradient(
     to right,
     var(--bs-blue) 0 15px,
