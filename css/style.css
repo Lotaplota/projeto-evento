@@ -42,4 +42,5 @@ nav a {
 
 .formulario {
   max-width: 800px !important;
+  height: 100vh;
 }

@@ -13,7 +13,7 @@
     <script src="scripts/popover.js" defer></script> <!-- Script para habilitar os hovers -->
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 overflow-hidden">
     <!-- Barra de navegação -->
     <nav class="d-block navbar bg-primary navbar-expand-sm pt-3 pb-0 sticky-top">
         <div class="container">
@@ -66,13 +66,13 @@
 
         <div class="row mx-3 g-3">
             <!-- Input nome -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-7">
                 <label for="nome" class="form-label">Nome</label>
                 <input type="text" class="form-control" id="nome" placeholder="Insira o seu nome completo">
             </div>
 
             <!-- Input e-mail -->
-            <div class="col-6 col-md-6" id="grupoEmail">
+            <div class="col-6 col-md-5" id="grupoEmail">
                 <label for="usuarioEmail" class="form-label">Email</label>
                 <div class="input-group">
                     <input type="text" class="form-control text-end" name="" id="usuarioEmail" placeholder="fulano_de_tal">
@@ -125,8 +125,10 @@
 
             <!-- Input enviar -->
             <div class="col-12 col-md-6">
-                <button type="submit" class="btn btn-primary h-100 w-100">sdfs</button>
+                <button type="submit" class="btn btn-primary h-100 w-100 fs-2 fw-medium">Enviar</button>
             </div>
         </div>
     </div>
+
+    <footer class="align-bottom text-bg-dark sticky-bottom text-center align-content-center" style="min-height: 100px;">© Todos os direitos reservados.</footer>
 </body>
