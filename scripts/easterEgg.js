@@ -4,10 +4,11 @@ document.getElementById("prenda").addEventListener("input", function () {
 
     switch (entrada) {
         case "fogueira":
-            // espaco.className = "bg-warning text-white p-4 mt-3";
+            espaco.className = "fs-4 h-100 align-self-center ms-2 rounded border border-1 border-black border-opacity-25";
             espaco.innerHTML = "🔥";
             break;
         case "sanfona":
+            espaco.className = "fs-4 h-100 align-self-center ms-2 rounded border border-1 border-black border-opacity-25";
             espaco.innerHTML = "🪗"
             break;
         default:

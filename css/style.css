@@ -1,5 +1,6 @@
 :root {
-
+  --marrom: rgb(85, 42, 21);
+  --marrom-suave: rgb(180, 136, 69);
 }
 
 body {
@@ -47,7 +48,7 @@ nav a {
 .formulario {
   max-width: 800px !important;
   height: 100vh;
-  background-color: bisque;
+  background-color: var(--marrom-suave);
 }
 
 .borda-colorida {
@@ -63,4 +64,9 @@ nav a {
     transparent 105px 120px
   );
   height: .4rem;
+}
+
+#botaoEnviarFormulario {
+  border: 2px dashed var(--marrom-suave);
+  background-color: var(--marrom);
 }
