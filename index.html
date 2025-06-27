@@ -33,112 +33,134 @@
     </nav>
     
     <!-- Conteúdo do corpo -->
-    <div class="container p-0 bg-light bg-opacity-75">
-
-        <!-- Banner de boas-vindas -->
-        <div class="d-md-block p-5 mb-4 boas-vindas">
-            <img src="img/bandeirinhas.png" alt="" class="float-start banner-md me-4">
-            <div>
-                <h1 class="display-1 text-center mb-4">Bem vindo ao Arraiá 4K!</h1>
-                <h2 class="lead fs-2">Aproveite o melhor de culinária, música, e brincadeiras que o centro-oeste pode oferecer com um toque digital único.</h2>
+     <div class="mx-auto" style="max-width: 1000px;">
+         <div class="container px-5 bg-light bg-opacity-75">
+     
+            <!-- Banner de boas-vindas -->
+            <div class="d-md-block p-1 mb-4">
+                <div>
+                    <h1 class="display-1 text-center mb-4">Bem vindo ao Arraiá 4K!</h1>
+                    <h2 class="lead fs-2">Aproveite o melhor de culinária, música, e brincadeiras que o centro-oeste pode oferecer com um toque digital único.</h2>
+                </div>
             </div>
-            <div class="w-100"></div> <!-- Classe vazia para evitar overlap -->
-        </div>
-
-        <!-- Seção atrações -->
-        <div class="divisor-colorido"></div>
-        <h1 class="container-fluid display-4 text-center">Visite as Nossas Barraquinhas Tecnológicas</h1>
-        
-        <div class="px-5 mb-3">
+    
+            <!-- Seção atrações -->
+            <div class="divisor-colorido"></div>
+            <h1 class="container-fluid display-4 text-center">Visite as Nossas Barraquinhas Tecnológicas</h1>
+            
             <!-- Carrossel de atrações -->
-            <div class="carousel slide carousel-fade" id="carrossel-atracoes" data-bs-ride="carousel">
-                <!-- Indicadores do carrosel -->
-                <div class="carousel-indicators">
-                    <button class="bg-primary border border-light rounded-2 fs-2 active" data-bs-target="#carrossel-atracoes" data-bs-slide-to="0"></button>
-                    <button class="bg-warning border border-light rounded-2 fs-2" data-bs-target="#carrossel-atracoes" data-bs-slide-to="1"></button>
-                    <button class="bg-success border border-light rounded-2 fs-2" data-bs-target="#carrossel-atracoes" data-bs-slide-to="2"></button>
-                    <button class="bg-danger border border-light rounded-2 fs-2" data-bs-target="#carrossel-atracoes" data-bs-slide-to="3"></button>
-                </div>
-
-                <!-- Conteúdo do carrossel -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="40000"> <!-- REMOVE interval -->
-                        <img src="img/atacao.png" alt="" class="d-block w-100">
-                        <div class="carousel-caption text-center text-md-start bottom-0 w-100 px-4 p-0 mb-5 position-absolute start-0">
-                            <a href="atracoes.html" class="text-decoration-none text-light text-shadow-subtle">
-                                <h1>Nossas Barraquinhas</h1>
-                                <p class="lead fs-2 d-none d-md-block">Cumpadis ocês num podem perde as melhores barraquinhas que tem no arraiá do 4k</p> <!-- TODO -->
-                            </a>
-                        </div>
+            <div class="px-5 mb-3">
+                <div class="carousel slide carousel-fade bordado-grosso rounded-4" id="carrossel-atracoes" data-bs-ride="carousel">
+                    <!-- Indicadores do carrosel -->
+                    <div class="carousel-indicators">
+                        <button class="bg-primary border border-light rounded-2 fs-2 active" data-bs-target="#carrossel-atracoes" data-bs-slide-to="0"></button>
+                        <button class="bg-warning border border-light rounded-2 fs-2" data-bs-target="#carrossel-atracoes" data-bs-slide-to="1"></button>
+                        <button class="bg-success border border-light rounded-2 fs-2" data-bs-target="#carrossel-atracoes" data-bs-slide-to="2"></button>
+                        <button class="bg-danger border border-light rounded-2 fs-2" data-bs-target="#carrossel-atracoes" data-bs-slide-to="3"></button>
                     </div>
-
-                    <div class="carousel-item">
-                        <img src="img/fogueira.png" alt="" class="d-block w-100">
-                        <div class="carousel-caption text-center text-md-start bottom-0 w-100 px-4 p-0 mb-5 position-absolute start-0">
-                            <a href="atracoes.html" class="text-decoration-none text-light text-shadow-subtle">
-                                <h1>Fogueira Holográfica</h1>
-                                <p class="lead fs-2 d-none d-md-block">Venha conhecer uma das atraçãoes mais importante dessa festa junina de pura tecnologia e comida boa.</p> <!-- TODO -->
-                            </a>
+    
+                    <!-- Conteúdo do carrossel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active position-relative" data-bs-interval="10000"> <!-- REMOVE interval -->
+                            <div class="d-md-none position-absolute w-100 text-center pt-2">
+                                <a href="" href="atracoes.html" class="text-decoration-none text-light text-shadow-subtle">
+                                    <h1 class="bg-black bg-opacity-50">Nossas Barraquinhas</h1>
+                                </a>
+                            </div>
+                            <img src="img/atacao.png" alt="" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-flex bg-black bg-opacity-50 text-center text-md-start bottom-0 w-100 px-4 p-0 mb-5 position-absolute start-0">
+                                <a href="atracoes.html" class="text-decoration-none text-light text-shadow-subtle">
+                                    <h1>Nossas Barraquinhas</h1>
+                                    <p class="lead fs-3 d-md-block">Cumpadis ocês num podem perde as melhores barraquinhas que tem no Arraiá 4K</p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/correio elegante.png" alt="" class="d-block w-100">
-                        <div class="carousel-caption text-center text-md-start bottom-0 w-100 px-4 p-0 mb-5 position-absolute start-0">
-                            <a href="atracoes.html" class="text-decoration-none text-light text-shadow-subtle">
-                                <h1>Correio Elegante Pneumático</h1>
-                                <p class="lead fs-2 d-none d-md-block">Mande aqui aquela mensagem para aquele cumpadi que ocê tá gostando, sem ele saber.</p> <!-- TODO -->
-                            </a>
+    
+                        <div class="carousel-item">
+                            <div class="d-md-none position-absolute w-100 text-center pt-2">
+                                <a href="" href="atracoes.html" class="text-decoration-none text-light text-shadow-subtle">
+                                    <h1 class="bg-black bg-opacity-50">Fogueira Holográfica</h1>
+                                </a>
+                            </div>
+                            <img src="img/fogueira.png" alt="" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-flex bg-black bg-opacity-50 text-center text-md-start bottom-0 w-100 px-4 p-0 mb-5 position-absolute start-0">
+                                <a href="atracoes.html" class="text-decoration-none text-light text-shadow-subtle">
+                                    <h1>Fogueira Holográfica</h1>
+                                    <p class="lead fs-3 d-none d-md-block">Venha conhecer uma das atraçãoes mais importantes dessa festa junina de pura tecnologia e comida boa.</p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/churrasquinho.png" alt="" class="d-block w-100">
-                        <div class="carousel-caption text-center text-md-start bottom-0 w-100 px-4 p-0 mb-5 position-absolute start-0">
-                            <a href="atracoes.html" class="text-decoration-none text-light text-shadow-subtle">
-                                <h1>Impressora de Espetinhos</h1>
-                                <p class="lead fs-2 d-none d-md-block"> O nosso espetinho é feito com materiais 100% sintéticos, impressos bem aqui mêmo na nossa impressora de úrtima geração. Até a madeira é impressa! Mai vô tê que confessá qui quem imprimiu ela foi uma árvore bem aqui do terreiro :D</p> <!-- TODO -->
-                            </a>
+    
+                        <div class="carousel-item">
+                            <div class="d-md-none position-absolute w-100 text-center pt-2">
+                                <a href="" href="atracoes.html" class="text-decoration-none text-light text-shadow-subtle">
+                                    <h1 class="bg-black bg-opacity-50">Correio Elegante Pneumático</h1>
+                                </a>
+                            </div>
+                            <img src="img/correio elegante.png" alt="" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-flex bg-black bg-opacity-50 text-center text-md-start bottom-0 w-100 px-4 p-0 mb-5 position-absolute start-0">
+                                <a href="atracoes.html" class="text-decoration-none text-light text-shadow-subtle">
+                                    <h1>Correio Elegante Pneumático</h1>
+                                    <p class="lead fs-3 d-none d-md-block">Mande aqui aquela mensagem para aquele cumpadi que ocê tá gostando, sem ele saber.</p>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item">
+                            <div class="d-md-none position-absolute w-100 text-center pt-2">
+                                <a href="" href="atracoes.html" class="text-decoration-none text-light text-shadow-subtle">
+                                    <h1 class="bg-black bg-opacity-50">Espetinhos Sintéticos</h1>
+                                </a>
+                            </div>
+                            <img src="img/churrasquinho.png" alt="" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-flex bg-black bg-opacity-50 text-center text-md-start bottom-0 w-100 px-4 p-0 mb-5 position-absolute start-0">
+                                <a href="atracoes.html" class="text-decoration-none text-light text-shadow-subtle">
+                                    <h1>Espetinhos Sintéticos</h1>
+                                    <p class="lead fs-3 d-none d-md-block"> O nosso espetinho é feito com materiais 100% sintéticos, impressos bem aqui mêmo na nossa impressora de úrtima geração.</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="divisor-colorido"></div>
-
-        <!-- Seção data e contagem regressiva -->
-        <div class="container px-5 mt-3 row">
-            <div class="col-12 col-lg-7 p-3 order-lg-1 py-1">
-                <h1 class="text-center">Onde será?</h1>
-                <h3 style="text-indent: 4rem;"> Pra achá o arraiá é só ir lá pru Parque da Cidade. É um baita dum parcão, mas dento dele ocê vai ouvi os batuque da nossa festança. Segue os orvido que ocê vai chegá lá na Praça das Fontes. Chegano é só colá junto e arretá o pé!</h3> <!-- TODO -->
-            </div>
-            <iframe class="col-12 start col-lg-5 order-lg-0 px-0 mb-5 shadow rounded-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.2566279139605!2d-47.91529839173862!3d-15.805140873031464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3a985ffdbc3f%3A0x2c44d73c87bc2f63!2sPra%C3%A7a%20das%20Fontes!5e0!3m2!1spt-BR!2sbr!4v1750724627385!5m2!1spt-BR!2sbr" width="600" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="col-12 col-lg-6 order-lg-2">
-                <h1>Marca no seu calendário a data ó. Dia 4 de abril às 18 da tarde, bem quando o sol tá arriano.</h1>
-            </div>
-
-            <!-- Cronômetro de contagem regressiva -->
-            <div class="col-12 col-lg-6 order-lg-3 align-content-center my-3 mx-auto">
-                <div class="row mx-auto justify-content-center">
-                    <div id="cronometroDias" class="col-2 display-3 mx-0 px-0 text-center">00</div>
-                    <div id="doisPontos" class="display-2">:</div>
-                    <div id="cronometroHoras" class="col-2 display-3 mx-0 px-0 text-center">00</div>
-                    <div id="doisPontos" class="display-2">:</div>
-                    <div id="cronometroMinutos" class="col-2 display-3 mx-0 px-0 text-center">00</div>
-                    <div id="doisPontos" class="display-2">:</div>
-                    <div id="cronometroSegundos" class="col-2 display-3 mx-0 px-0 text-center">00</div>
+            <div class="divisor-colorido"></div>
+    
+            <!-- Seção data e contagem regressiva -->
+            <div class="container px-5 mt-3 row">
+                <div class="col-12 col-lg-7 p-3 order-lg-1 py-1">
+                    <h1 class="text-center">Onde será?</h1>
+                    <h3 style="text-indent: 4rem;"> Pra achá o arraiá é só ir lá pru Parque da Cidade. É um baita dum parcão, mas dento dele ocê vai ouvi os batuque da nossa festança. Segue os orvido que ocê vai chegá lá na Praça das Fontes. Chegano é só colá junto e arretá o pé!</h3> <!-- TODO -->
                 </div>
-                <div class="row mx-auto justify-content-center g-0">
-                    <h2 class="col-2 text-center mt-n1">dias</h2>
-                    <div id="doisPontos"></div>
-                    <h2 class="col-2 text-center mt-n1">horas</h2>
-                    <div id="doisPontos"></div>
-                    <h2 class="col-2 text-center mt-n1">min</h2>
-                    <div id="doisPontos"></div>
-                    <h2 class="col-2 text-center mt-n1">seg</h2>
+                <iframe class="col-12 start col-lg-5 order-lg-0 px-0 mb-5 shadow rounded-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.2566279139605!2d-47.91529839173862!3d-15.805140873031464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3a985ffdbc3f%3A0x2c44d73c87bc2f63!2sPra%C3%A7a%20das%20Fontes!5e0!3m2!1spt-BR!2sbr!4v1750724627385!5m2!1spt-BR!2sbr" width="600" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-12 col-lg-6 order-lg-2">
+                    <h1>Marca no seu calendário a data ó! Dia 4 de abril às 18 da tarde, bem quando o sol tá arriano.</h1>
+                </div>
+    
+                <!-- Cronômetro de contagem regressiva -->
+                <div class="col-12 col-lg-6 order-lg-3 align-content-center pt-3 mt-lg-0 mb-5 mx-auto bordado-grosso rounded-4 fundo-amarelo">
+                    <div class="row mx-auto justify-content-center">
+                        <div id="cronometroDias" class="col-2 display-3 mx-0 px-0 text-center">00</div>
+                        <div id="doisPontos" class="display-2">:</div>
+                        <div id="cronometroHoras" class="col-2 display-3 mx-0 px-0 text-center">00</div>
+                        <div id="doisPontos" class="display-2">:</div>
+                        <div id="cronometroMinutos" class="col-2 display-3 mx-0 px-0 text-center">00</div>
+                        <div id="doisPontos" class="display-2">:</div>
+                        <div id="cronometroSegundos" class="col-2 display-3 mx-0 px-0 text-center">00</div>
+                    </div>
+                    <div class="row mx-auto justify-content-center g-0 fundo-marrom rounded-4 text-light pt-2 mb-3">
+                        <h2 class="col-2 text-center mt-n1">dias</h2>
+                        <div id="doisPontos"></div>
+                        <h2 class="col-2 text-center mt-n1">horas</h2>
+                        <div id="doisPontos"></div>
+                        <h2 class="col-2 text-center mt-n1">min</h2>
+                        <div id="doisPontos"></div>
+                        <h2 class="col-2 text-center mt-n1">seg</h2>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <footer id="placeholderFooter"></footer>
 </body>
 </html>

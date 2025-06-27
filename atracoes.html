@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="scripts/atracoes.js"></script>
     <script src="scripts/global.js"></script>
 </head>
 
@@ -31,135 +32,140 @@
             </div>
         </nav>
     </nav>
-
+    
     <!-- Conteúdo do corpo -->
-    <div class="container p-0 bg-light bg-opacity-75">
-        <div class="display-2 text-center">Nossas Atrações</div>
-
-        <div class="px-3">
-             <!-- Menu navegação -->
-            <nav class="nav nav-pills nav-fill px-3">
-                <button data-bs-target="#colFogueira" data-bs-toggle="collapse" class="nav-link active" href="" aria-expanded="false">Fogueira Holográfica</button>
-                <button data-bs-target="#colCorreio" data-bs-toggle="collapse" class="nav-link" href="" aria-expanded="false">Correio Elegante Pneumático</button>
-                <button data-bs-target="#colEspetinho" data-bs-toggle="collapse" class="nav-link" href="" aria-expanded="false">Impressora de Espetinho</button>
-                <button class="nav-link disabled">A Jacaretinga Robô (Em breve)</button> <!-- 🤭 -->
-            </nav>
-
-            <!-- Cards das atrações -->
-            <div id="grupoCollapse"> <!-- TODO: preencher os campos de subtítulo e texto. Alguns já estão bons, mas podem melhorar. -->
-                <!-- Card da atração 1 -->
-                <div id="colFogueira" class="collapse show" data-bs-parent="#grupoCollapse">
-                    <div class="card">
-                        <img class="card-img-top" src="img/fogueira.png" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Fogueira Holográfica</h4>
-                            <h6 class="card-subtitle pt-0 mb-2">A fogueira que esquenta, mas não queima</h6>
-                            <p class="card-text">Venha conhecer uma das atraçãoes mais importante dessa festa junina de pura tecnologia e comida boa.</p>
+    <div class="mx-auto" style="max-width: 1000px;">
+        <div class="container pt-3 p-5 bg-light bg-opacity-75">
+            <div class="display-2 text-center mt-0">Nossas Atrações</div>
+    
+            <div class="px-3">
+                 <!-- Menu navegação -->
+                <nav class="nav nav-pills nav-fill px-3">
+                    <button data-bs-target="#colFogueira" data-bs-toggle="collapse" class="nav-link active botao-bordado" href="">Fogueira Holográfica</button>
+                    <button data-bs-target="#colCorreio" data-bs-toggle="collapse" class="nav-link botao-bordado" href="">Correio Elegante Pneumático</button>
+                    <button data-bs-target="#colEspetinho" data-bs-toggle="collapse" class="nav-link botao-bordado" href="">Impressora de Espetinho</button>
+                    <button class="nav-link disabled">A Jacaretinga Robô (Em breve)</button> <!-- 🤭 -->
+                </nav>
+    
+                <!-- Cards das atrações -->
+                <div id="grupoCollapse" class="rounded-4 shadow"> <!-- TODO: preencher os campos de subtítulo e texto. Alguns já estão bons, mas podem melhorar. -->
+                    <!-- Card da atração 1 -->
+                    <div id="colFogueira" class="collapse show" data-bs-parent="#grupoCollapse">
+                        <div class="card">
+                            <img class="card-img-top" src="img/fogueira.png" alt="">
+                            <div class="card-body fundo-bege">
+                                <h4 class="card-title">Fogueira Holográfica</h4>
+                                <h6 class="card-subtitle pt-0 mb-2">A fogueira que esquenta, mas não queima</h6>
+                                <p class="card-text">Venha conhecer uma das atraçãoes mais importante dessa festa junina de pura tecnologia e comida boa.</p>
+                            </div>
                         </div>
                     </div>
+        
+                    <!-- Card da atração 2 -->
+                    <div id="colCorreio" class="collapse" data-bs-parent="#grupoCollapse">
+                        <div class="card">
+                            <img class="card-img-top" src="img/correio elegante.png" alt="">
+                            <div class="card-body fundo-bege">
+                                <h4 class="card-title">Correio Elegante Pneumático</h4>
+                                <h6 class="card-subtitle pt-0 mb-2">Sua privacidade está garantida. Juro procê!</h6>
+                                <p class="card-text">Mande aqui aquela mensagem para aquele cumpadi que ocê tá gostando, sem ele saber. Mar fica de ôi nas notificações do teu celulá pra vê si num tem ninhuma cartinha sua isperanu não!</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card da atração 3 -->
+                    <div id="colEspetinho" class="collapse" data-bs-parent="#grupoCollapse">
+                        <div class="card">
+                            <img class="card-img-top" src="img/churrasquinho.png" alt="">
+                            <div class="card-body fundo-bege">
+                                <h4 class="card-title">Espetinho Sintético</h4>
+                                <h6 class="card-subtitle pt-0 mb-2">Feito com carne 100% sintética. Sem abuso animal.</h6>
+                                <p class="card-text">Cumpadis! Se ocês vieram no arraiá do 4k não podem perde 
+                                    o nosso espetinho é feito com materiais 100% sintéticos, impressos bem aqui mêmo na nossa impressora de úrtima geração. Até a madeira é impressa! Mai vô tê que confessá qui quem imprimiu ela foi uma árvore bem aqui do terreiro :D
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divisor-colorido mt-5"></div>
+    
+            <!-- Outras características do evento -->
+            <div>
+                <div class="display-2 text-center">
+                    Outras Peculiaridades
                 </div>
     
-                <!-- Card da atração 2 -->
-                <div id="colCorreio" class="collapse" data-bs-parent="#grupoCollapse">
-                    <div class="card">
-                        <img class="card-img-top" src="img/correio elegante.png" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Correio Elegante Pneumático</h4>
-                            <h6 class="card-subtitle pt-0 mb-2">Sua privacidade está garantida. Juro procê!</h6>
-                            <p class="card-text">Mande aqui aquela mensagem para aquele cumpadi que ocê tá gostando, sem ele saber. Mar fica de ôio nas notificações do teu celulá pra vê si num tem ninhuma cartinha sua isperanu não!</p>
-                        </div>
-                    </div>
+                <div class="text-center mb-2">
+                    <img class="rounded float-md-start m-4" src="img/pastel.png" alt="">
+                    <h2>Imagine se fosse possível colocar um código QR em um pastel?</h2>
+                    <h3 class="p-3">Um QR Code no pastel? Ma pra quê qui serve isso, sô? É pra ocê tentá a sorte! Escaneia o bicho e pode ganhá uma prenda! Se ocê tivé sorte pódi levá pra casa um presente bão dimais da conta. Mas si não tivé, vai pagá uma prenda engraçada pra animá o nosso arraiá!
+                                    
+                    </h3>
                 </div>
+                <div class="w-100"></div>
+                <div class="text-center mb-2">
+                    <img class="rounded float-md-end m-4" src="img/cachorro quente.png" alt="">
+                    <h2><em>Cansado de QR codes? Nós não!</em></h2>
+                    <h3 class="p-3">Além de cumer um delicioso cachorro quente ocê ainda pode ganhar uma prenda 
+    </h3>
+                </div>
+                <div class="text-center mb-2">
+                    <img class="rounded float-md-start m-4" src="img/pescaria.png" alt="">
+                    <h2><em>Cumpadis ocês num acharam que acabaram os QR code naum né? porque aqui tem mais.</em></h2>
+                    <h3 class="p-3">Venha conhecer a Pescaria de QR code, onde se ocê for bom em pescar pode tirar uma prenda boa que só meus cumpadi.</h3>
+                </div>
+            </div>
     
-                <!-- Card da atração 3 -->
-                <div id="colEspetinho" class="collapse" data-bs-parent="#grupoCollapse">
-                    <div class="card">
-                        <img class="card-img-top" src="img/churrasquinho.png" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Espetinho Sintético</h4>
-                            <h6 class="card-subtitle pt-0 mb-2">Feito com carne 100% sintética. Sem abuso animal.</h6>
-                            <p class="card-text">Cumpadis! Se ocês vieram no arraiá do 4k não podem perde 
-                                o nosso espetinho é feito com materiais 100% sintéticos, impressos bem aqui mêmo na nossa impressora de úrtima geração. Até a madeira é impressa! Mai vô tê que confessá qui quem imprimiu ela foi uma árvore bem aqui do terreiro :D
-                            </p>
-                        </div>
-                    </div>
+            <div class="divisor-colorido"></div>
+
+            <!-- Seção de avaliações -->
+            <div class="text-center">
+                <p class="display-2 mb-0">Depoimentos</p>
+                <p class="lead">Veja o que outros festeiros disseram sobre a nossa quermesse</p>
+            </div>
+    
+            <!-- TODO: fazer as citações de algumas pessoas que não seja essa zoeira aqui -->
+            <div class="px-3 row w-75 m-auto">
+                <div class="col-12 col-md-6">
+                    <blockquote class="blockquote">
+                        <p>"Sempre que tem a festa junina da 4k, minha presença é garantida aqui comida boa e muita tecnologia não falta nesse arraia."
+                        </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        <cite title="Source Title">Peterson Patrick</cite>
+                    </figcaption>
+                </div>
+                <div class="col-12 col-md-6 text-end">
+                    <blockquote class="blockquote">
+                        <p>"Vim de xique-xique para esse arraiá de arromba."</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        <cite title="Source Title">Maria luisa</cite>
+                    </figcaption>
+                </div>
+                <div class="col-12 col-md-6">
+                    <blockquote class="blockquote">
+                        <p>"Já fui em muitas festa juninas, entretanto nenhuma é igual essa."</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        <cite title="Source Title">Jacaretinga</cite>
+                    </figcaption>
+                </div>
+                <div class="col-12 col-md-6 text-end">
+                    <blockquote class="blockquote">
+                        <p class="overflow-auto" style="height: 100px;">"Já virou tradição de familía ter a presença aqui na 4K."</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        <cite title="Source Title">Kristhian</cite>
+                    </figcaption>
                 </div>
             </div>
+    
+    
+    
         </div>
-
-        <!-- Outras características do evento -->
-        <div>
-            <div class="display-2 text-center mt-5 py-3">
-                Outras Peculiaridades
-            </div>
-
-            <div class="text-center mb-2">
-                <img class="rounded float-md-start m-4" src="img/pastel.png" alt="">
-                <h2>Imagine se fosse possível colocar um código QR em um pastel?</h2>
-                <h3 class="p-3">Um QR Code no pastel? Ma pra quê qui serve isso, sô? É pra ocê tentá a sorte! Escaneia o bicho e pode ganhá uma prenda! Se ocê tivé sorte pódi levá pra casa um presente bão dimais da conta. Mas si não tivé, vai pagá uma prenda engraçada pra animá o nosso arraiá!
-                                
-                </h3>
-            </div>
-            <div class="w-100"></div>
-            <div class="text-center mb-2">
-                <img class="rounded float-md-end m-4" src="img/cachorro quente.png" alt="">
-                <h2><em>Cansado de QR codes? Nós não!</em></h2>
-                <h3 class="p-3">Além de cumer um delicioso cachorro quente ocê ainda pode ganhar uma prenda 
-</h3>
-            </div>
-            <div class="text-center mb-2">
-                <img class="rounded float-md-start m-4" src="img/pescaria.png" alt="">
-                <h2><em>Cumpadis ocês num acharam que acabaram os QR code naum né? porque aqui tem mais.</em></h2>
-                <h3 class="p-3">Venha conhecer a Pescaria de QR code, onde se ocê for bom em pescar pode tirar uma prenda boa que só meus cumpadi.</h3>
-            </div>
-        </div>
-
-        <!-- Seção de avaliações -->
-        <div class="text-center">
-            <p class="display-2 mb-0">Depoimentos</p>
-            <p class="lead">Veja o que outros festeiros disseram sobre a nossa quermesse</p>
-        </div>
-
-        <!-- TODO: fazer as citações de algumas pessoas que não seja essa zoeira aqui -->
-        <div class="px-3 row w-75 m-auto">
-            <div class="col-12 col-md-6">
-                <blockquote class="blockquote">
-                    <p>"Sempre que tem a festa junina da 4k, minha presença é garantida aqui comida boa e muita tecnologia não falta nesse arraia."
-                    </p>
-                </blockquote>
-                <figcaption class="blockquote-footer">
-                    <cite title="Source Title">Peterson Patrick</cite>
-                </figcaption>
-            </div>
-            <div class="col-12 col-md-6 text-end">
-                <blockquote class="blockquote">
-                    <p>"Vim de xique-xique para esse arraiá de arromba."</p>
-                </blockquote>
-                <figcaption class="blockquote-footer">
-                    <cite title="Source Title">Maria luisa</cite>
-                </figcaption>
-            </div>
-            <div class="col-12 col-md-6">
-                <blockquote class="blockquote">
-                    <p>"Já fui em muitas festa juninas, entretanto nenhuma é igual essa."</p>
-                </blockquote>
-                <figcaption class="blockquote-footer">
-                    <cite title="Source Title">Jacaretinga</cite>
-                </figcaption>
-            </div>
-            <div class="col-12 col-md-6 text-end">
-                <blockquote class="blockquote">
-                    <p class="overflow-auto" style="height: 100px;">"Já virou tradição de familía ter a presença aqui na 4K."</p>
-                </blockquote>
-                <figcaption class="blockquote-footer">
-                    <cite title="Source Title">Kristhian</cite>
-                </figcaption>
-            </div>
-        </div>
-
-
-
     </div>
-
 </body>
 </html>

@@ -7,6 +7,10 @@
   --amarelo: #fecb2f;
 }
 
+.bordado {
+  border: 1px dashed var(--bege-claro) !important;
+}
+
 .logo4K {
   height: 80px;
 }
@@ -58,8 +62,40 @@ nav a {
     --bs-breadcrumb-divider-color: var(--marrom);
 }
 
-iframe {
+iframe, .bordado-grosso {
   border: 4px dashed var(--marrom) !important;
+}
+
+.rounded-1,
+.rounded-2,
+.rounded-3,
+.rounded-4,
+.rounded-5
+ {
+  overflow: hidden
+}
+
+.bordado-outline {
+  outline: 2px dashed;
+}
+
+.botao-bordado {
+  outline-color: var(--marrom) !important;
+  outline: 1px dashed !important;
+  outline-offset: -3px;
+}
+
+button.active {
+  outline: none !important;
+  font-family: Freckle Face;
+  font-size: x-large;
+  border: 2px dashed !important;
+  color: black !important;
+  background-color: var(--amarelo) !important;
+}
+
+.caixa-sombra {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, .5) !important;
 }
 
 td, th, tr
@@ -73,17 +109,6 @@ td, th, tr
   max-width: 20px;
 }
 
-.boas-vindas {
-    height: 400px;
-}
-
-.banner-md {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: center top;
-}
-
 .carousel-indicators button {
     height: 16px !important;
     width: 16px !important;
@@ -93,13 +118,13 @@ td, th, tr
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-@media (min-width: 768px) {
-  .banner-md {
-    object-fit: cover;
-    height: 100%;
-    width: 200px;
-    object-position: center center; /* Horizontal section */
-  }
+.corpo {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px !important; /* Your hard limit */
 }
 
 .btn {
@@ -116,18 +141,18 @@ td, th, tr
   background-image: repeating-linear-gradient(
     to right,
     var(--bs-blue) 0 15px,
-    transparent 15px 30px,
-    var(--bs-yellow) 30px 45px,
-    transparent 45px 60px,
-    var(--bs-red) 60px 75px,
-    transparent 75px 90px,
-    var(--bs-green) 90px 105px,
-    transparent 105px 120px
+    transparent 15px 20px,
+    var(--bs-yellow) 20px 35px,
+    transparent 35px 40px,
+    var(--bs-red) 40px 55px,
+    transparent 55px 60px,
+    var(--bs-green) 60px 75px,
+    transparent 75px 80px
   );
   height: .4rem;
 }
 
-#botaoEnviarFormulario {
+#botaoEnviar {
   font-family: "Henny Penny";
   border: 2px dashed var(--marrom-suave);
 }
