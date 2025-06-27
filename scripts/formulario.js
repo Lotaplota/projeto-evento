@@ -12,6 +12,10 @@ document.getElementById("prenda").addEventListener("input", function () {
             espaco.className = "fs-4 h-100 align-self-center ms-2 rounded border border-1 border-black border-opacity-25";
             espaco.innerHTML = "🪗"
             break;
+        case "jacaretinga":
+            espaco.className = "fs-4 h-100 align-self-center bg-danger ms-2 rounded border border-1 border-black border-opacity-25";
+            espaco.innerHTML = "🐊"
+            break;
         default:
             espaco.innerHTML = "";
     }
