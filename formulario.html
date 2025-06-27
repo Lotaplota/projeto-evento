@@ -13,7 +13,7 @@
 
     <script src="scripts/global.js"></script>
     <script src="scripts/popover.js" defer></script> <!-- Script para habilitar os hovers -->
-    <script src="scripts/easterEgg.js" defer></script>
+    <script src="scripts/formulario.js" defer></script>
 </head>
 
 <body class="d-flex flex-column h-100 overflow-hidden">
@@ -37,71 +37,83 @@
     <!-- Conteúdo da página -->
     <div class="container-md p-0 formulario">
         <div class="display-2 text-center">Quero Ajudar!</div>
-        <div class="lead fs-2 text-center mb-3">Quer ajudar na nossa festa? Preencha o seguinte formulário e simbora!</div>
+        <div class="lead fs-2 text-center mb-3">Quer ajudar na nossa quermesse? Preencha o seguinte formulário e simbora!</div>
 
         <!-- Início do formulário -->
-        <div class="row mx-3 g-3">
-            <!-- Input nome -->
-            <div class="col-12 col-md-7">
-                <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Insira o seu nome completo">
-            </div>
-
-            <!-- Input e-mail -->
-            <div class="col-6 col-md-5" id="grupoEmail">
-                <label for="usuarioEmail" class="form-label">Email</label>
-                <div class="input-group">
-                    <input type="text" class="form-control text-end" name="" id="usuarioEmail" placeholder="fulano_de_tal">
-                    <label for="" class="input-group-text">@</label>
-                    <input type="text" class="form-control" placeholder="correio.com">
+        <form id="formulario" action="" method="post" class="needs-validation" novalidate>
+            <div class="row mx-3 g-3">
+                <!-- Input nome -->
+                <div class="col-12 col-md-7">
+                    <label for="campoNome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="campoNome" placeholder="Insira o seu nome completo" required>
+                    <div class="invalid-feedback text-light">Os campos marcados em vermelho são obrigatórios.</div>
+                </div>
+    
+                <!-- Input e-mail -->
+                <div class="col-6 col-md-5" id="grupoEmail">
+                    <label for="usuarioEmail" class="form-label">Email</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control text-end" name="" id="usuarioEmail" placeholder="fulano_de_tal" required>
+                        <label for="" class="input-group-text">@</label>
+                        <input type="text" class="form-control" placeholder="correio.com" required>
+                    </div>
+                </div>
+    
+                <!-- Input animação -->
+                <div class="col-6 col-md-6" id="grupoAnimacao">
+                    <label for="" class="form-label">Nível de Animação</label>
+                    <div class="btn-group w-100" role="group">
+                        <input type="radio" name="nivelAnimacao" id="btn1" class="btn-check">
+                        <label for="btn1" class="btn btn-outline-danger">🌽</label>
+                        <input type="radio" name="nivelAnimacao" id="btn2" class="btn-check">
+                        <label for="btn2" class="btn btn-outline-danger">🌽</label>
+                        <input type="radio" name="nivelAnimacao" id="btn3" class="btn-check">
+                        <label for="btn3" class="btn btn-outline-danger">🌽</label>
+                        <input type="radio" name="nivelAnimacao" id="btn4" class="btn-check">
+                        <label for="btn4" class="btn btn-outline-danger">🌽</label>
+                        <input type="radio" name="nivelAnimacao" id="btn5" class="btn-check">
+                        <label for="btn5" class="btn btn-outline-danger">🌽</label>
+                    </div>
+                </div>
+    
+                <!-- Input minha prenda -->
+                <div class="col-4 col-md-6" id="grupoPrenda">
+                    <div class="d-flex">
+                        <label for="prenda" class="form-label">Minha prenda Tecnológica</label>
+                        <div type="button" class="ms-1" data-bs-trigger="hover" data-bs-toggle="popover" data-bs-html="true" data-bs-content="Sua prenda seria qualquer objeto que você que possa trazer que esteja dentro do tema, desde uma <em>fogueira</em> até uma <em>sanfona</em>😉"><i class="bi-info-circle-fill"></i></div>
+                    </div>
+                    <div class="d-flex">
+                        <input type="text" class="form-control" id="prenda">
+                        <div id="easterEgg" class="h-100 align-self-center mx-1 rounded border border-1 border-black border-opacity-25"></div> <!-- Aqui entra o easter egg que ela pediu, mas vai precisar de um pouquinho de JavaScript... -->
+                    </div>
+                </div>
+    
+                <!-- Input disponibilidade -->
+                <div class="col-8 col-md-6" id="grupoDisp">
+                    <div class="form-label">Disponibilidade</div>
+                    <div class="btn-group" id="dfasd">
+                        <input type="checkbox" id="btnDisp1" class="btn-check">
+                        <label for="btnDisp1" class="btn btn-outline-success">Preparativos</label>
+                        <input type="checkbox" id="btnDisp2" class="btn-check">
+                        <label for="btnDisp2" class="btn btn-outline-success">Durante a festa</label>
+                        <input type="checkbox" id="btnDisp3" class="btn-check">
+                        <label for="btnDisp3" class="btn btn-outline-success">Desmonte</label>
+                    </div>
+                </div>
+    
+                <!-- Input enviar -->
+                <div class="col-12 col-md-6">
+                    <button id="botaoEnviar" class="btn btn-primary fundo-marrom h-100 w-100 fs-2 fw-medium bege">Enviar</button>
                 </div>
             </div>
+        </form>
 
-            <!-- Input animação -->
-            <div class="col-6 col-md-6" id="grupoAnimacao">
-                <label for="" class="form-label">Nível de Animação</label>
-                <div class="btn-group w-100" role="group">
-                    <input type="radio" name="nivelAnimacao" id="btn1" class="btn-check">
-                    <label for="btn1" class="btn btn-outline-danger">🌽</label>
-                    <input type="radio" name="nivelAnimacao" id="btn2" class="btn-check">
-                    <label for="btn2" class="btn btn-outline-danger">🌽</label>
-                    <input type="radio" name="nivelAnimacao" id="btn3" class="btn-check">
-                    <label for="btn3" class="btn btn-outline-danger">🌽</label>
-                    <input type="radio" name="nivelAnimacao" id="btn4" class="btn-check">
-                    <label for="btn4" class="btn btn-outline-danger">🌽</label>
-                    <input type="radio" name="nivelAnimacao" id="btn5" class="btn-check">
-                    <label for="btn5" class="btn btn-outline-danger">🌽</label>
-                </div>
-            </div>
-
-            <!-- Input minha prenda -->
-            <div class="col-4 col-md-6" id="grupoPrenda">
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="avisoValidacao" class="toast text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="d-flex">
-                    <label for="prenda" class="form-label">Minha prenda Tecnológica</label>
-                    <div type="button" class="ms-1" data-bs-trigger="hover" data-bs-toggle="popover" data-bs-html="true" data-bs-content="Sua prenda seria qualquer objeto que você que possa trazer que esteja dentro do tema, desde uma <em>fogueira</em> até uma <em>sanfona</em>😉"><i class="bi-info-circle-fill"></i></div>
+                <div class="toast-body" id="conteudoAviso">Mensagem aqui...</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Fechar"></button>
                 </div>
-                <div class="d-flex">
-                    <input type="text" class="form-control" id="prenda">
-                    <div id="easterEgg" class="h-100 align-self-center mx-1 rounded border border-1 border-black border-opacity-25"></div> <!-- Aqui entra o easter egg que ela pediu, mas vai precisar de um pouquinho de JavaScript... -->
-                </div>
-            </div>
-
-            <!-- Input disponibilidade -->
-            <div class="col-8 col-md-6" id="grupoDisp">
-                <div class="form-label">Disponibilidade</div>
-                <div class="btn-group" id="dfasd">
-                    <input type="checkbox" id="btnDisp1" class="btn-check">
-                    <label for="btnDisp1" class="btn btn-outline-success">Preparativos</label>
-                    <input type="checkbox" id="btnDisp2" class="btn-check">
-                    <label for="btnDisp2" class="btn btn-outline-success">Durante a festa</label>
-                    <input type="checkbox" id="btnDisp3" class="btn-check">
-                    <label for="btnDisp3" class="btn btn-outline-success">Desmonte</label>
-                </div>
-            </div>
-
-            <!-- Input enviar -->
-            <div class="col-12 col-md-6">
-                <button id="botaoEnviarFormulario" type="submit" class="btn btn-primary fundo-marrom h-100 w-100 fs-2 fw-medium bege">Enviar</button>
             </div>
         </div>
     </div>
