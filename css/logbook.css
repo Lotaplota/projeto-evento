@@ -11,6 +11,14 @@
     --separador-dia: 24px;
 }
 
+img {
+    margin-bottom: .5rem;
+}
+
+.figurinha {
+    margin: .4rem;
+}
+
 html {
     height: 100vh;
 }
