@@ -11,6 +11,10 @@
   border: 1px dashed var(--bege-claro) !important;
 }
 
+.bordado-marrom {
+  border: 1px dashed var(--marrom) !important;
+}
+
 .logo4K {
   height: 80px;
 }
@@ -64,6 +68,11 @@ nav a {
 
 iframe, .bordado-grosso {
   border: 4px dashed var(--marrom) !important;
+}
+
+.breadcrumb-item {
+  font-family: Freckle Face;
+  font-weight: 100;
 }
 
 .rounded-1,
